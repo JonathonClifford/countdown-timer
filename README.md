@@ -1,4 +1,4 @@
-# countdown-timer
+# Countdown Timer
 This repo hosts a countdown timer that will serve as my first full-stack application.
 
 ## Components
