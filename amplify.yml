@@ -8,6 +8,7 @@ frontend:
     build:
       commands:
         - ng build
+        - npm ci
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: dist/countdown-timer
