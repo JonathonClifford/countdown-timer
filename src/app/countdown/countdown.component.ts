@@ -37,8 +37,9 @@ export class CountdownComponent implements OnInit {
 
   update(value: string) {
     this.inputCountdown = parseInt(value);
+    var count:number = this.inputCountdown;
     const task = async () => {
-      for (let i = 0; i < 5; i++) {
+      for (let i = 0; i < count; i++) {
         await new Promise(r => setTimeout(r, 1000));
         this.inputCountdown--;
         console.log(this.inputCountdown);
