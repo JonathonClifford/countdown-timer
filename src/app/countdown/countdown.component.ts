@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CountdownComponent implements OnInit {
 
   startCount = 5;
+  inputCountdown: number = 0;
 
   constructor() { }
 
@@ -29,6 +30,18 @@ export class CountdownComponent implements OnInit {
         await new Promise(r => setTimeout(r, 1000));
         this.startCount--;
         console.log(this.startCount);
+      }
+    };
+    task();
+  }
+
+  update(value: string) {
+    this.inputCountdown = parseInt(value);
+    const task = async () => {
+      for (let i = 0; i < 5; i++) {
+        await new Promise(r => setTimeout(r, 1000));
+        this.inputCountdown--;
+        console.log(this.inputCountdown);
       }
     };
     task();

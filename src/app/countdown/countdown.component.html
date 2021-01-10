@@ -1,3 +1,8 @@
 <h2>Count Down</h2>
 <p>{{ startCount }}</p>
 <button (click)="countUpFunc()">Subtract</button>
+<br>
+<input #countdownInput
+       (keyup.enter)="update(countdownInput.value)">
+<button (click)="update(countdownInput.value)">Start</button>
+<p>{{ inputCountdown }}</p>
