@@ -2,6 +2,9 @@ version: 1
 frontend:
   phases:
     # IMPORTANT - Please verify your build commands
+    preBuild:
+      commands:
+        - nvm use $VERSION_NODE_12
     build:
       commands:
         - ng build
