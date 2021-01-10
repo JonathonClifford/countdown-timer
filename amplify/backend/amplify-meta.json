@@ -1,0 +1,15 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-countdowntimer-dev-201150-authRole",
+      "UnauthRoleArn": "arn:aws:iam::717734695783:role/amplify-countdowntimer-dev-201150-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::717734695783:role/amplify-countdowntimer-dev-201150-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-countdowntimer-dev-201150-deployment",
+      "UnauthRoleName": "amplify-countdowntimer-dev-201150-unauthRole",
+      "StackName": "amplify-countdowntimer-dev-201150",
+      "StackId": "arn:aws:cloudformation:us-east-1:717734695783:stack/amplify-countdowntimer-dev-201150/e3f13a50-5323-11eb-9304-0ab4742ddfab",
+      "AmplifyAppId": "d2s5unwyetzqdk"
+    }
+  }
+}
