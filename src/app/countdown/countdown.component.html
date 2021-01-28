@@ -2,14 +2,15 @@
 <p>{{ startCount }}</p>
 <button (click)="countUpFunc()">Subtract</button>
 <br>
-<input #countdownInputHour
+<input class="my-timer" placeholder="00" #countdownInputHour
        (keyup.enter)="update(countdownInputHour.value)"
        type="number">
-<input #countdownInputMinute
+<input class="my-timer" #countdownInputMinute
        (keyup.enter)="update(countdownInputMinute.value)"
        type="number">
-<input #countdownInput
+<input class="my-timer" #countdownInput
        (keyup.enter)="update(countdownInput.value)"
         type="number">
 <button (click)="updateWithHours(countdownInputHour.value, countdownInputMinute.value, countdownInput.value)">Start</button>
 <p>{{ inputCountdown }}</p>
+<p>{{ inputCountdownTimerFormat }}</p>
