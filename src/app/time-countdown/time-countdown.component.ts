@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimeCountdownComponent implements OnInit {
 
+  clicked: boolean = true;
+
   constructor() { }
 
   ngOnInit(): void {
