@@ -48,4 +48,30 @@ export class CountdownComponent implements OnInit {
     task();
   }
 
+  updateWithMinutes(minutes: string, seconds: string) {
+    this.inputCountdown = parseInt(minutes) * 60 + parseInt(seconds);
+    var count:number = this.inputCountdown;
+    const task = async () => {
+      for (let i = 0; i < count; i++) {
+        await new Promise(r => setTimeout(r, 1000));
+        this.inputCountdown--;
+        console.log(this.inputCountdown);
+      }
+    };
+    task();
+  }
+
+  updateWithHours(hours: string, minutes: string, seconds: string) {
+    this.inputCountdown = parseInt(hours) * 3600 + parseInt(minutes) * 60 + parseInt(seconds);
+    var count:number = this.inputCountdown;
+    const task = async () => {
+      for (let i = 0; i < count; i++) {
+        await new Promise(r => setTimeout(r, 1000));
+        this.inputCountdown--;
+        console.log(this.inputCountdown);
+      }
+    };
+    task();
+  }
+
 }
